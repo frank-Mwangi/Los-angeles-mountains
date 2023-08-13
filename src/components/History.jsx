@@ -11,10 +11,10 @@ const History = () => {
         <img src={logoImg} alt="logo" />
         <ul>
           <li>
-            <a href="#">01. History</a>
+            <a href="#history">01. History</a>
           </li>
           <li>
-            <a href="#">02. Team </a>
+            <a href="#team">02. Team </a>
           </li>
         </ul>
       </div>

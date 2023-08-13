@@ -12,7 +12,7 @@ const Hero = () => {
             <a href="#history">01. History</a>
           </li>
           <li>
-            <a href="#">02. Team</a>
+            <a href="#team">02. Team</a>
           </li>
         </ul>
       </nav>

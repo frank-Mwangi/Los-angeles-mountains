@@ -5,61 +5,63 @@ import logoImg from "../assets/footer-img.png";
 const Climb = () => {
   return (
     <Wrapper>
-      <div>
-        <div className="center">
-          <h2>02. CLIMB</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
-            magnam debitis labore eius enim praesentium quibusdam ipsa
-            accusantium voluptate repellendus!
-          </p>
-        </div>
-      </div>
-
-      <nav>
-        <div className="center">
-          <ul>
-            <li>
-              <a>MOUNTAIN 1</a>
-            </li>
-            <li>
-              <a>MOUNTAIN 2</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <div className="mountains">
-        <div className="center">
-          <div className="card">
-            <table>
-              <th>
-                <h2>SCHEDULE</h2>
-              </th>
-              <tr>
-                <td>25 Nov 2016</td>
-                <td>Vestibulum viverra</td>
-              </tr>
-              <tr>
-                <td>28 Nov 2016</td>
-                <td>Vestibulum viverra</td>
-              </tr>
-              <tr>
-                <td>18 Dec 2016</td>
-                <td>Vestibulum viverra</td>
-              </tr>
-              <tr>
-                <td>7 Jan 2017</td>
-                <td>Vestibulum viverra</td>
-              </tr>
-            </table>
+      <div id="team">
+        <div>
+          <div className="center">
+            <h2>02. CLIMB</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
+              magnam debitis labore eius enim praesentium quibusdam ipsa
+              accusantium voluptate repellendus!
+            </p>
           </div>
         </div>
-      </div>
-      <div className="footer">
-        <div className="center">
-          <img src={logoImg} alt="LA Mountains logo" />
-          <p>COPYRIGHT 2016. ALL RIGHTS RESERVED</p>
+
+        <nav>
+          <div className="center">
+            <ul>
+              <li>
+                <a>MOUNTAIN 1</a>
+              </li>
+              <li>
+                <a>MOUNTAIN 2</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div className="mountains">
+          <div className="center">
+            <div className="card">
+              <table>
+                <th>
+                  <h2>SCHEDULE</h2>
+                </th>
+                <tr>
+                  <td>25 Nov 2016</td>
+                  <td>Vestibulum viverra</td>
+                </tr>
+                <tr>
+                  <td>28 Nov 2016</td>
+                  <td>Vestibulum viverra</td>
+                </tr>
+                <tr>
+                  <td>18 Dec 2016</td>
+                  <td>Vestibulum viverra</td>
+                </tr>
+                <tr>
+                  <td>7 Jan 2017</td>
+                  <td>Vestibulum viverra</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div className="footer">
+          <div className="center">
+            <img src={logoImg} alt="LA Mountains logo" />
+            <p>COPYRIGHT 2016. ALL RIGHTS RESERVED</p>
+          </div>
         </div>
       </div>
     </Wrapper>
