@@ -20,7 +20,9 @@ const History = () => {
       </div>
       <div id="history" className="container">
         <div className="center-content">
-          <h2>01. HISTORY</h2>
+          <h2>
+            <span>01.</span> HISTORY
+          </h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
             minus quos consectetur tenetur sequi totam repellendus sed, deserunt
@@ -65,6 +67,19 @@ const Wrapper = styled.section`
     width: 90vw;
     max-width: 800px;
     margin: 0 auto;
+    h2 {
+      font-size: 32px;
+      color: #414f6b;
+      font-weight: 700;
+      font-family: "Oswald";
+      span {
+        opacity: 0.502;
+        font-size: 136px;
+        color: #414f6b;
+        font-weight: 700;
+        font-family: "Oswald";
+      }
+    }
   }
   .navbar {
     width: 90vw;
@@ -82,6 +97,20 @@ const Wrapper = styled.section`
       display: flex;
       list-style: none;
       gap: 10px;
+
+      li {
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #414f6b;
+        font-weight: 1000;
+        font-style: italic;
+        font-family: "Lato";
+        a {
+          color: unset;
+        }
+      }
     }
   }
 `;

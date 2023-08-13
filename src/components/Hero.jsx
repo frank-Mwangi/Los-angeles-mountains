@@ -32,11 +32,28 @@ const Wrapper = styled.section`
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    img {
+      height: 50px;
+      border: 1px solid #bcc3c6;
+      border-radius: 50%;
+      background-color: white;
+    }
     ul {
       display: flex;
       list-style: none;
       gap: 10px;
-      color: white;
+      li {
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 20px;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-style: italic;
+        font-family: "Lato";
+        a {
+          color: white;
+        }
+      }
     }
   }
 `;
