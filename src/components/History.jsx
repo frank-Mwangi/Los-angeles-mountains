@@ -4,21 +4,24 @@ import imgOne from "../assets/carousel1-img.jpg";
 import imgTwo from "../assets/carousel2-img.jpg";
 import logoImg from "../assets/footer-img.png";
 
-const History = () => {
+const History = ({ accord }) => {
   return (
     <Wrapper>
-      <div className="navbar">
-        <img src={logoImg} alt="logo" />
-        <ul>
-          <li>
-            <a href="#history">01. History</a>
-          </li>
-          <li>
-            <a href="#team">02. Team </a>
-          </li>
-        </ul>
-      </div>
-      <div id="history" className="container">
+      <div
+        id="history"
+        className={accord === "history" ? "container expanded" : "container"}
+      >
+        <div className="navbar">
+          <img src={logoImg} alt="logo" />
+          <ul>
+            <li>
+              <a href="#history">01. History</a>
+            </li>
+            <li>
+              <a href="#team">02. Team </a>
+            </li>
+          </ul>
+        </div>
         <div className="center-content">
           <h2>
             <span>01.</span> HISTORY
@@ -45,12 +48,16 @@ const History = () => {
 const Wrapper = styled.section`
   .container {
     background-image: url("/History-img.jpg");
-    height: 100vh;
+    height: 0;
+    overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+  .expanded {
+    min-height: 100vh;
   }
   .carousel-bg {
     padding: 1rem;
@@ -82,6 +89,7 @@ const Wrapper = styled.section`
     }
   }
   .navbar {
+    // background-color: white;
     width: 90vw;
     max-width: 800px;
     margin: 0 auto;
@@ -90,9 +98,6 @@ const Wrapper = styled.section`
     padding: 1rem;
     font-weight: 600;
     letter-spacing: 1px;
-    // img {
-    // object-fit: cover;
-    // }
     ul {
       display: flex;
       list-style: none;
@@ -111,6 +116,11 @@ const Wrapper = styled.section`
           color: unset;
         }
       }
+    }
+  }
+  @media (min-width: 760px) {
+    .container {
+      min-height: 100vh;
     }
   }
 `;
